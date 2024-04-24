@@ -1,43 +1,62 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Fund Me App</title>
-  </head>
-        <link rel="icon" href="loan.png" type="image/png">
-        <h1>WELCOME DEAR DONOR</h1>
-        <style>
-            body{
-                background-image:url('bg.jpg');
-            }
+<head>
+  <title>Fund Me App</title>
+  <link rel="icon" href="loan.png" type="image/png">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
 
-            h1{
-                text-align: center;
-                color: white;
-            }
+    .container {
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
 
-            button{
-                display: block;
-                margin: auto;
-            }
+    h1 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 20px;
+    }
 
-            input{
-                display: block;
-                margin: auto;
-            }
+    button, input {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: none;
+      border-radius: 4px;
+      background-color: #007bff;
+      color: #fff;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
 
-        </style>
+    button:hover, input:hover {
+      background-color: #0056b3;
+    }
 
-        <body>
-            <P><button id="connectButton">Connect</button></P>
-            <P><button id="balanceButton">Contract Balance</button></P>
-            <P><button id="withdrawButton">Withdraw</button></P>
-            <!-- <form> -->
-            <!-- <P><label for="ethAmount">ETH Amount</label></P> -->
-
-            <P><input id="ethAmount" placeholder="Please Enter Amount" type="number"/></P>
-            <P><button type="button" id="fundButton" > Fund </button></P>
-            <!-- </form> -->
-        </body>
-
+    input {
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>WELCOME DEAR DONOR</h1>
+    <button id="connectButton">Connect</button>
+    <button id="balanceButton">Contract Balance</button>
+    <button id="withdrawButton">Withdraw</button>
+    <input id="ethAmount" placeholder="Please Enter Amount" type="number"/>
+    <button type="button" id="fundButton">Fund</button>
+  </div>
   <script src="./index.js" type="module"></script>
+</body>
 </html>
